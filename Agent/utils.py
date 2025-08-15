@@ -14,9 +14,14 @@ from pydantic import BaseModel, Field
 from chat_agent_executor import  create_react_agent
 from langchain_deepseek import ChatDeepSeek
 
+#########################
+forensic_book_path = " xxx "
+long_form_analysis_path = " xxx "
+#########################
+
 
 prompt_book = hub.pull("pwoc517/more-crafted-rag-prompt")
-forensic_book=Chroma(embedding_function=OpenAIEmbeddings(model="text-embedding-3-large"),persist_directory="/home/wangzhenyuan/report/forensic_book_1104/")
+forensic_book=Chroma(embedding_function=OpenAIEmbeddings(model="text-embedding-3-large"),persist_directory=forensic_book_path)
 retriever_book = forensic_book.as_retriever(search_kwargs={"k": 4})
 
 def format_docs_book(docs):
@@ -126,5 +131,6 @@ reflexion_chain = reflexion_prompt | model_re.with_structured_output(Reflection_
 
 
 ################### H-RAG
-reference=Chroma(embedding_function=OpenAIEmbeddings(model="text-embedding-3-large"),persist_directory="/home/wangzhenyuan/report/analytical_note_1104/")
+reference=Chroma(embedding_function=OpenAIEmbeddings(model="text-embedding-3-large"),persist_directory=long_form_analysis_path)
 retriever_reference = reference.as_retriever(search_kwargs={"k": 1})
+
