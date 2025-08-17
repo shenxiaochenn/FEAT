@@ -70,23 +70,25 @@ python  feat_human_multi_replan.py --data_path xxx  --out_path xxx
 There are certain preparations that you must make.
 
 1. You need to prepare some keys. This is essential!
-   ```python
-   os.environ["LANGCHAIN_TRACING_V2"]="true"
-  os.environ["LANGCHAIN_ENDPOINT"]="https://api.smith.langchain.com"
-  os.environ["LANGCHAIN_API_KEY"]="lsv2_xxxxxxxxx"
-  os.environ["LANGCHAIN_PROJECT"]="xxxxxxxxx"
-  os.environ["OPENAI_API_KEY"] = "sk-xxxxxxxxx"
-  os.environ["OPENAI_BASE_URL"] = "https:xxxxxxxxx"
-  os.environ["DEEPSEEK_API_KEY"] = "sk-xxxxxxxxx"
-  os.environ["TAVILY_API_KEY"] = "tvly-xxxxxxxxx"
-   ```
-2. We have deployed multiple local medical large-scale models, and you must successfully deploy them.
-    ```bash
-    cd  llama_factory
-    sh deepseek.sh ### our finetuning Forensic LLM
-    sh  baichuan.sh  ### medical knowlege model
-    ... ## other tools model, if you need !
-    ```
+ ```python
+ os.environ["LANGCHAIN_TRACING_V2"]="true"
+ os.environ["LANGCHAIN_ENDPOINT"]="https://api.smith.langchain.com"
+ os.environ["LANGCHAIN_API_KEY"]="lsv2_xxxxxxxxx"
+ os.environ["LANGCHAIN_PROJECT"]="xxxxxxxxx"
+ os.environ["OPENAI_API_KEY"] = "sk-xxxxxxxxx"
+ os.environ["OPENAI_BASE_URL"] = "https:xxxxxxxxx"
+ os.environ["DEEPSEEK_API_KEY"] = "sk-xxxxxxxxx"
+ os.environ["TAVILY_API_KEY"] = "tvly-xxxxxxxxx"  
+```
+3. We have deployed multiple local medical large-scale models, and you must successfully deploy them.
+
+  ```bash
+  cd  llama_factory
+  sh deepseek.sh ### our finetuning Forensic LLM
+  sh  baichuan.sh  ### medical knowlege model
+  ... ## other tools model, if you need !
+
+  ```
 
 
 ## 🙏 Acknowledgments
