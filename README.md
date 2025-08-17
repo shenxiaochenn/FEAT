@@ -20,7 +20,7 @@ FEAT :monkey_face: <img src="docs/demo.png" width="200px" align="right" />
 ## 👀 Updates: 
 * 15/08/2025: We are currently updating the code repository of FEAT.
 
-## 🚀 Installation:
+## Installation:
 
 **Pre-requisites**:
 ```bash
@@ -36,8 +36,12 @@ After activating the virtual environment, you can install specific package requi
 git clone --depth 1 https://github.com/hiyouga/LLaMA-Factory.git
 cd LLaMA-Factory
 pip install -e ".[torch,metrics]" --no-build-isolation
+## second, install like langchain and langgraph
+pip install -r requirements.txt
 ## 
 ```
+## 🚀 Quick Start
+
 
 
 ## 🙏 Acknowledgments
