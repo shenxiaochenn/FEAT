@@ -9,6 +9,8 @@ FEAT :monkey_face: <img src="docs/demo.png" width="200px" align="right" />
 *A Reflection & Memory module* monitors progress, critiques outputs, caches evidence, and iteratively refines hypotheses to reduce error propagation. 
 *A Global Solver* then consolidates solver outputs using hierarchical retrieval-augmented generation over a curated Chinese-language medicolegal corpus, combined with locally fine-tuned LLMs, to synthesize a long-form analysis and a concise cause-of-death conclusion with evidence traceability. 
 
+[中文](https://github.com/shenxiaochenn/FEAT/blob/master/README_zh.md) ｜ English
+
 ## FEAT: A Multi-Agent Forensic AI System with Domain-Adapted Large Language Model for Automated Cause-of-Death Analysis
 
 <div align=center>
