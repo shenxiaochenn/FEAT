@@ -1,4 +1,6 @@
-# FEAT
-Official Code for FEAT: A Multi-Agent Forensic AI System with Domain-Adapted Large Language Model for Automated Cause-of-Death Analysis
+
+SongCi :monkey_face: <img src="docs/feat.png" width="200px" align="right" />
+===========
+
 
 The code is coming soon !
