@@ -31,7 +31,7 @@ ANACONDA
 ```
 After activating the virtual environment, you can install specific package requirements as follows:
 
-```python
+```bash
 ## first, you need install the LLaMA-Factory.
 git clone --depth 1 https://github.com/hiyouga/LLaMA-Factory.git
 cd LLaMA-Factory
@@ -47,7 +47,46 @@ pip install -r requirements.txt
 </div>
 
 We have developed a web interface based on Streamlit, so that forensic pathologists can easily access it.
+You can see [README.md](https://github.com/shenxiaochenn/FEAT/blob/master/Agent_streamlit/README.md).
+And the only run 
 
+```bash
+streamlit run streamlit_app.py
+```
+You can now view your Streamlit app in your browser. This way, you can easily use FEAT and it will help you analyze forensic cases.
+
+  Network URL: xxxxxxxxxxxxx
+  External URL: xxxxxxxxxxxxx
+
+Another way is that you can also use FEAT by entering commands in the terminal.
+
+```bash
+cd Agent
+
+python  feat_human_multi_replan.py --data_path xxx  --out_path xxx
+```
+**NOTE**
+
+There are certain preparations that you must make.
+
+1. You need to prepare some keys. This is essential!
+   ```python
+   os.environ["LANGCHAIN_TRACING_V2"]="true"
+  os.environ["LANGCHAIN_ENDPOINT"]="https://api.smith.langchain.com"
+  os.environ["LANGCHAIN_API_KEY"]="lsv2_xxxxxxxxx"
+  os.environ["LANGCHAIN_PROJECT"]="xxxxxxxxx"
+  os.environ["OPENAI_API_KEY"] = "sk-xxxxxxxxx"
+  os.environ["OPENAI_BASE_URL"] = "https:xxxxxxxxx"
+  os.environ["DEEPSEEK_API_KEY"] = "sk-xxxxxxxxx"
+  os.environ["TAVILY_API_KEY"] = "tvly-xxxxxxxxx"
+   ```
+2. We have deployed multiple local medical large-scale models, and you must successfully deploy them.
+    ```bash
+    cd  llama_factory
+    sh deepseek.sh ### our finetuning Forensic LLM
+    sh  baichuan.sh  ### medical knowlege model
+    ... ## other tools model, if you need !
+    ```
 
 
 ## 🙏 Acknowledgments
@@ -59,24 +98,15 @@ Email: chunfeng.lian@xjtu.edu.cn, wzy218@xjtu.edu.cn,   and  shenxiaochen@stu.xj
 
 ---
 
-
-
 ## 📖 Citation
 If our work is useful for your research, please consider cite:
 ```bibtex
 @article{shen2025feat,
   title={FEAT: A Multi-Agent Forensic AI System with Domain-Adapted Large Language Model for Automated Cause-of-Death Analysis},
   author={Shen, Chen and Zhang, Wanqing and Li, Kehan and Huang, Erwen and Bi, Haitao and Fan, Aiying and Shen, Yiwen and Dong, Hongmei and Zhang, Ji and Shao, Yuming and others},
-  journal={arXiv preprint arXiv:2508.07950
-        
-        
-        
-        
-        
-        
-        
-        
+  journal={arXiv preprint arXiv:2508.07950        
 },
-  year={2025}
+  year={2025},
 }
+
 ```
