@@ -53,21 +53,26 @@ And the only run
 ```bash
 streamlit run streamlit_app.py
 ```
+
 You can now view your Streamlit app in your browser. This way, you can easily use FEAT and it will help you analyze forensic cases.
 
-  Network URL: xxxxxxxxxxxxx
-  External URL: xxxxxxxxxxxxx
+```bash
+Network URL: xxxxxxxxxxxxx  
+External URL: xxxxxxxxxxxxx
+```
 
 Another way is that you can also use FEAT by entering commands in the terminal.
 
 ```bash
 cd Agent
-
-python  feat_human_multi_replan.py --data_path xxx  --out_path xxx
+python  feat_human_multi_replan.py --data_path xxx  --out_path xxx  ## this will cost more money!
+## or
+python  feat_human_multi.py --data_path xxx  --out_path xxx
 ```
-**NOTE**
 
-There are certain preparations that you must make.
+## 🔥 NOTE:
+
+There are certain preparations that you must do!
 
 1. You need to prepare some keys. This is essential!
  ```python
@@ -80,14 +85,13 @@ There are certain preparations that you must make.
  os.environ["DEEPSEEK_API_KEY"] = "sk-xxxxxxxxx"
  os.environ["TAVILY_API_KEY"] = "tvly-xxxxxxxxx"  
 ```
-3. We have deployed multiple local medical large-scale models, and you must successfully deploy them.
+2. We have deployed multiple local medical large-scale models, and you must successfully deploy them.
 
   ```bash
   cd  llama_factory
   sh deepseek.sh ### our finetuning Forensic LLM
   sh  baichuan.sh  ### medical knowlege model
   ... ## other tools model, if you need !
-
   ```
 
 
@@ -106,7 +110,7 @@ If our work is useful for your research, please consider cite:
 @article{shen2025feat,
   title={FEAT: A Multi-Agent Forensic AI System with Domain-Adapted Large Language Model for Automated Cause-of-Death Analysis},
   author={Shen, Chen and Zhang, Wanqing and Li, Kehan and Huang, Erwen and Bi, Haitao and Fan, Aiying and Shen, Yiwen and Dong, Hongmei and Zhang, Ji and Shao, Yuming and others},
-  journal={arXiv preprint arXiv:2508.07950        
+  journal={arXiv preprint arXiv:2508.07950                
 },
   year={2025},
 }
