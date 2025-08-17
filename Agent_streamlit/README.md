@@ -1,4 +1,4 @@
-# Forensic Agent — Streamlit UI
+# Forensic Agent(FEAT) — Streamlit UI
 
 This project wraps your LangGraph-based forensic pipeline into a Streamlit app.
 It supports two modes:
