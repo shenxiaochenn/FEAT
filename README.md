@@ -42,6 +42,12 @@ pip install -r requirements.txt
 ```
 ## 🚀 Quick Start
 
+<div align=center>
+<img src="docs/web.png" width="800px" />
+</div>
+
+We have developed a web interface based on Streamlit, so that forensic pathologists can easily access it.
+
 
 
 ## 🙏 Acknowledgments
@@ -62,6 +68,14 @@ If our work is useful for your research, please consider cite:
   title={FEAT: A Multi-Agent Forensic AI System with Domain-Adapted Large Language Model for Automated Cause-of-Death Analysis},
   author={Shen, Chen and Zhang, Wanqing and Li, Kehan and Huang, Erwen and Bi, Haitao and Fan, Aiying and Shen, Yiwen and Dong, Hongmei and Zhang, Ji and Shao, Yuming and others},
   journal={arXiv preprint arXiv:2508.07950
+        
+        
+        
+        
+        
+        
+        
+        
 },
   year={2025}
 }
