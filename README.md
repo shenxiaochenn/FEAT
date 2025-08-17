@@ -13,3 +13,72 @@ FEAT :monkey_face: <img src="docs/demo.png" width="200px" align="right" />
 
 <div align=center>
 <img src="docs/fig1.jpeg" width="800px" />
+
+
+## 🙏 Acknowledgments
+This code is developed on the top of [LangChain](https://github.com/langchain-ai/langchain), [LangGraph](https://github.com/langchain-ai/langgraph),[Langsmith](https://github.com/langchain-ai/langsmith-sdk) and [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)
+
+## ✉️ Contact
+
+Email: chunfeng.lian@xjtu.edu.cn, wzy218@xjtu.edu.cn,   and  shenxiaochen@stu.xjtu.edu.cn  Any kind discussions are welcomed!
+
+---
+
+
+
+## 📖 Citation
+If our work is useful for your research, please consider cite:
+```
+@article{shen2025feat,
+  title={FEAT: A Multi-Agent Forensic AI System with Domain-Adapted Large Language Model for Automated Cause-of-Death Analysis},
+  author={Shen, Chen and Zhang, Wanqing and Li, Kehan and Huang, Erwen and Bi, Haitao and Fan, Aiying and Shen, Yiwen and Dong, Hongmei and Zhang, Ji and Shao, Yuming and others},
+  journal={arXiv preprint arXiv:2508.07950
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        },
+  year={2025}
+}
+```
