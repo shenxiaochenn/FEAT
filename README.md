@@ -62,14 +62,7 @@ If our work is useful for your research, please consider cite:
   title={FEAT: A Multi-Agent Forensic AI System with Domain-Adapted Large Language Model for Automated Cause-of-Death Analysis},
   author={Shen, Chen and Zhang, Wanqing and Li, Kehan and Huang, Erwen and Bi, Haitao and Fan, Aiying and Shen, Yiwen and Dong, Hongmei and Zhang, Ji and Shao, Yuming and others},
   journal={arXiv preprint arXiv:2508.07950
-        
-        
-        
-        
-        
-        
-        
-        },
+},
   year={2025}
 }
 ```
