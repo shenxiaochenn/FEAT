@@ -8,6 +8,8 @@ FEAT :monkey_face: <img src="docs/demo.png" width="200px" align="right" />
 *Reflection & Memory（反思与记忆）模块* 监控进度、批判性审阅输出、缓存证据，并通过迭代细化假设以减少误差传播。  
 *Global Solver（全局求解器）* 基于经策划的中文法医学语料，结合本地微调的 LLM，利用分层式 RAG 整合各求解器输出，生成可溯源的长文分析与精炼的死因结论。
 
+[English](https://github.com/shenxiaochenn/FEAT/blob/master/README.md) ｜ 中文
+
 ## FEAT：面向自动化死因分析、具域适配大语言模型的多智能体法医 AI 系统
 
 <div align=center>
