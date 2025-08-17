@@ -60,6 +60,8 @@ You can now view your Streamlit app in your browser. This way, you can easily us
 Network URL: xxxxxxxxxxxxx  
 External URL: xxxxxxxxxxxxx
 ```
+All you need to do is upload your information and then click on **"run to human feedback"**, which will start the preliminary analysis process. At this point, the system will interact with you. If you are satisfied with the result, it will generate the final long-format analysis and short-format conclusion. 
+Note: All the contents can be downloaded to your local device and will be saved with the default name "report.txt".
 
 Another way is that you can also use FEAT by entering commands in the terminal.
 
@@ -97,9 +99,9 @@ There are certain preparations that you must do!
 ## 😁 Demo:
 
 <div align=center>
-<img src="docs/fig2.png" width="600px" />
+<img src="docs/fig2.jpeg" width="600px" />
 
- ** An example to illustrate the working process of FEAT for autonomous cause-of-death analysis. **
+ **An example to illustrate the working process of FEAT for autonomous cause-of-death analysis.** 
 </div>
 
 
