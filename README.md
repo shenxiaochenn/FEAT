@@ -11,9 +11,9 @@ FEAT :monkey_face: <img src="docs/demo.png" width="200px" align="right" />
 
 ## FEAT: A Multi-Agent Forensic AI System with Domain-Adapted Large Language Model for Automated Cause-of-Death Analysis
 
-
+<div align=center>
 <img src="docs/fig1.jpeg" width="800px" />
-
+</div>
 
 ## 🙏 Acknowledgments
 This code is developed on the top of [LangChain](https://github.com/langchain-ai/langchain), [LangGraph](https://github.com/langchain-ai/langgraph),[Langsmith](https://github.com/langchain-ai/langsmith-sdk) and [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)
