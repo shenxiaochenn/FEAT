@@ -7,7 +7,7 @@ LANGCHAIN_PROJECT = "shenxiaochen_agent_demo"
 
 # Use your preferred LLM providers. Leave blank to stay in demo mode.
 OPENAI_API_KEY = ""
-OPENAI_BASE_URL = "https://api.openai.com/v1"
+OPENAI_BASE_URL = ""
 
 DEEPSEEK_API_KEY = ""
 TAVILY_API_KEY = ""
