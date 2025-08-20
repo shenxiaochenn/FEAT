@@ -71,8 +71,31 @@ def medicine_model(text: Annotated[str, "Specific issues related to medicine"]) 
 
 
 #############################################
+### mdeical model tool
+base_url_2 = "http://0.0.0.0:8004/v1/"
+client_2 = OpenAI(api_key="EMPTY", base_url=base_url_2)
 
-tools = [forensic_book,medicine_model,Pubmed,search]
+@tool
+def medicine_model2(text: Annotated[str, "Specific issues related to medicine"]) -> str:
+    """ Answer difficult medical-related questions. Model can think step by step."""
+    messages = [{"role": "system", "content": "You are an experienced forensic pathologist. Please provide scientifically rigorous and concise answers to the following specific questions. Think step by step!"},
+                {"role": "user", "content": text}
+                ]
+
+    response = client_.chat.completions.create(
+        model="zhenyuan",
+        messages=messages,
+        temperature=0.2,
+        max_tokens=20000,
+        stream=False,
+    )
+    return response.choices[0].message.content
+
+
+#############################################
+
+tools = [forensic_book,medicine_model,Pubmed,search,medicine_model2]
+
 
 agent_executor_graph = create_react_agent(model, tools)
 
@@ -133,4 +156,5 @@ reflexion_chain = reflexion_prompt | model_re.with_structured_output(Reflection_
 ################### H-RAG
 reference=Chroma(embedding_function=OpenAIEmbeddings(model="text-embedding-3-large"),persist_directory=long_form_analysis_path)
 retriever_reference = reference.as_retriever(search_kwargs={"k": 1})
+
 
